@@ -32,8 +32,13 @@ set apps[18]=Obsidian.Obsidian
 set apps[19]=Microsoft.PowerToys
 set apps[20]=Playnite.Playnite
 set apps[21]=Microsoft.VisualStudioCode
+set apps[22]=JetBrains.WebStorm
+set apps[23]=Brave.Brave
+set apps[24]=Git.Git
+set apps[25]=PostgreSQL.PostgreSQL.18
+set apps[26]=PrimateLabs.Geekbench.6
 
-set total=22
+set total=27
 set success=0
 set failed=0
 set skipped=0
@@ -44,7 +49,7 @@ echo Total apps: %total%
 echo =========================================
 echo.
 
-for /L %%i in (0,1,21) do (
+for /L %%i in (0,1,26) do (
 
     set app=!apps[%%i]!
     set /a current=%%i+1
