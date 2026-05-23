@@ -38,8 +38,9 @@ set apps[24]=Git.Git
 set apps[25]=PostgreSQL.PostgreSQL.18
 set apps[26]=PrimateLabs.Geekbench.6
 set apps[27]=Tailscale.Tailscale
+set apps[28]=Schniz.fnm
 
-set total=28
+set total=29
 set success=0
 set failed=0
 set skipped=0
@@ -50,7 +51,7 @@ echo Total apps: %total%
 echo =========================================
 echo.
 
-for /L %%i in (0,1,27) do (
+for /L %%i in (0,1,28) do (
 
     set app=!apps[%%i]!
     set /a current=%%i+1
