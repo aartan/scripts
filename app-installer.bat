@@ -40,8 +40,10 @@ set apps[26]=PrimateLabs.Geekbench.6
 set apps[27]=Tailscale.Tailscale
 set apps[28]=Schniz.fnm
 set apps[29]=Bruno.Bruno
+set apps[30]=ElementLabs.LMStudio
+set apps[31]=calibre.calibre
 
-set total=30
+set total=32
 set success=0
 set failed=0
 set skipped=0
@@ -52,7 +54,7 @@ echo Total apps: %total%
 echo =========================================
 echo.
 
-for /L %%i in (0,1,29) do (
+for /L %%i in (0,1,31) do (
 
     set app=!apps[%%i]!
     set /a current=%%i+1
